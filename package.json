@@ -1,0 +1,24 @@
+{
+  "name": "tech-talk-demo",
+  "version": "1.0.0",
+  "description": "Demo Go App with CSS",
+  "main": "index.js",
+  "dependencies": {
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.2.0",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+      "postcss": "^7.0.17",
+    "postcss-cli": "^6.1.2",
+    "tailwindcss": "^1.0.3"
+  },
+  "scripts": {
+  "build:tailwind": "postcss ./static/css/master.css -o ./static/dist/tailwind.css",
+    "watch": "watch \"npm run build:tailwind\" ./templates"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
